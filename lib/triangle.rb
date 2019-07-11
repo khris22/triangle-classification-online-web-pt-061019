@@ -26,7 +26,7 @@ class Triangle
       else
           :isosceles #two equal sides
       end
-    end
+    # end
   end
 
   class TriangleError < StandardError
