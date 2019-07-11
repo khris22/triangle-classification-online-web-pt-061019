@@ -23,7 +23,7 @@ class Triangle
           :equilateral #all sides equal
     elsif side1 != side2 && side2 != side3 && side1 != side3
           :scalene # no equal sides
-    elsif
+    elsif side1 == side2 || side2 == side3 || side3 == side1
           :isosceles #two equal sides
     end
   end
