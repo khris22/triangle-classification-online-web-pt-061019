@@ -25,10 +25,8 @@ class Triangle
           :scalene # no equal sides
     elsif
           :isosceles #two equal sides
-
-
     end
-    # end
+  end
   end
 
   class TriangleError < StandardError
