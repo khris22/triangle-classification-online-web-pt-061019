@@ -24,8 +24,7 @@ class Triangle
           :scalene # no equal sides
         elsif side1 == side2 || side2 == side3 || side3 == side1
           :isosceles #two equal sides
-
-      end
+        end
     end
   end
 
