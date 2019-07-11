@@ -16,7 +16,7 @@ class Triangle
             # the length of the third side. This is a principle known as the triangle inequality.
     elsif side1 <= 0 || side2 <= 0 || side3 <= 0
           raise TriangleError #custom error
-            # each side must be larger than 0.
+            # HINT2: each side must be larger than 0.
     else
         if side1 == side2 && side2 == side3 && side1 == side3
           :equilateral #all sides equal
