@@ -12,9 +12,9 @@ class Triangle
     # binding.pry
     if side1 == side2 && side2 == side3 && side1 == side3
           :equilateral #all sides equal
-    elsif != side2 && side2 != side3 && side1 != side3
+    elsif side1 != side2 && side2 != side3 && side1 != side3
           :scalene # no equal sides
-    elsif
+    elsif 
           :isosceles #two equal sides
 
     if (side1 + side2) <= side3 || (side2 + side3) <= side1 || (side3 + side1) <= side2
