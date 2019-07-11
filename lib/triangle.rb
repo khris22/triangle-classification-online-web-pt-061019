@@ -18,11 +18,11 @@ class Triangle
         :isosceles #two equal sides
     end
     # binding.pry
-    if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
-        raise TriangleError #custom error
+    # if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
+    #     raise TriangleError #custom error
       # HINT1:The sum of the lengths of any two sides of a triangle always exceeds
       # the length of the third side. This is a principle known as the triangle inequality.
-    else side1 <= 0 || side2 <= 0 || side3 <= 0
+    if side1 <= 0 || side2 <= 0 || side3 <= 0
         raise TriangleError #custom error
       # each side must be larger than 0.
     end
