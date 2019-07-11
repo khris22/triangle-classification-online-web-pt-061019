@@ -11,26 +11,24 @@ class Triangle
   def kind
     binding.pry
     if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
-        raise TriangleError
-
+        raise TriangleError #custom error
+      # HINT1:The sum of the lengths of any two sides of a triangle always exceeds 
+      # the length of the third side. This is a principle known as the triangle inequality.
     elsif side1 <= 0 || side2 <= 0 || side3 <= 0
-        raise TriangleError
+        raise TriangleError #custom error
+      # each side must be larger than 0.
     elsif
       if side1 == side2 && side2 == side3 && side1 == side3
-        :equilateral
+        :equilateral #all sides equal
       elsif side1 != side2 && side2 != side3 && side1 != side3
-        :scalene
+        :scalene # no equal sides
       else
-        :isosceles
+        :isosceles #two equal sides
       end
     end
   end
 
-
-  end
-
-
   class TriangleError < StandardError
   end
-
+  
 end
