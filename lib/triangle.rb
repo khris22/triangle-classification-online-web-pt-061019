@@ -20,7 +20,7 @@ class Triangle
       # each side must be larger than 0.
 
     elsif side1 == side2 && side2 == side3 && side1 == side3
-          :equilateral #all sides equal
+          puts :equilateral #all sides equal
     elsif side1 != side2 && side2 != side3 && side1 != side3
           :scalene # no equal sides
     else
