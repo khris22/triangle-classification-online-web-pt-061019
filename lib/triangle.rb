@@ -9,7 +9,7 @@ class Triangle
   end
 
   def kind
-    binding.pry
+    # binding.pry
     if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
         raise TriangleError #custom error
       # HINT1:The sum of the lengths of any two sides of a triangle always exceeds
