@@ -10,20 +10,23 @@ class Triangle
 
   def kind
     binding.pry
-    if side1 == side2 && side2 == side3 && side1 == side3
-      :equilateral
-    elsif side1 != side2 && side2 != side3 && side1 != side3
-      :scalene
-    else
-      :isosceles
-    end
-
-     if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
+    if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
         raise TriangleError
 
-    #  side1 <= 0 || side2 <= 0 || side3 <= 0
-    #   raise TriangleError
-    #
+    elsif side1 <= 0 || side2 <= 0 || side3 <= 0
+        raise TriangleError
+    elsif
+      if side1 == side2 && side2 == side3 && side1 == side3
+        :equilateral
+      elsif side1 != side2 && side2 != side3 && side1 != side3
+        :scalene
+      else
+        :isosceles
+      end
+    end
+  end
+
+
   end
 
 
