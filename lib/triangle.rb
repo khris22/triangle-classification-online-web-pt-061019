@@ -22,9 +22,6 @@ class Triangle
     elsif side1 >= 0 || side2 >= 0 || side3 >= 0
           raise TriangleError #custom error
             # each side must be larger than 0.
-
-
-
     else
           :isosceles #two equal sides
     end
