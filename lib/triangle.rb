@@ -14,8 +14,10 @@ class Triangle
           :equilateral #all sides equal
     elsif side1 != side2 && side2 != side3 && side1 != side3
           :scalene # no equal sides
+    else
+          :isosceles
 
-    elsif (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
+    if (side1 + side2) >= side3 || (side2 + side3) >= side1 || (side3 + side1) >= side2
           raise TriangleError #custom error
             # HINT1:The sum of the lengths of any two sides of a triangle always exceeds
             # the length of the third side. This is a principle known as the triangle inequality.
